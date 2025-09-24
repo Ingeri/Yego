@@ -1,0 +1,24 @@
+.hero {
+  background: url("hero-image.jpg") no-repeat center center/cover;
+  height: 85vh;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.hero h1 {
+  font-size: 30px;
+  text-align: right;
+  color: #1abc9c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-right: 3px solid #ff4b2b;
+  padding-right: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #15158f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

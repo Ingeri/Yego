@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwamaga | Yego Center</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../images/logo.svg" alt="Yego Center Logo" style="width: 60px; height: auto;">
+            <h1><span>Rwamagana</span> <span>Yego Center</span></h1>
+        </div>
+    
+        <!-- Hamburger button -->
+        <button class="menu-toggle" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Navigation links -->
+        <nav>
+            <ul id="menu">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About Us</a></li>
+                <li><a href="../service/">Services</a></li>
+                <li><a href="../programs/">Programs</a></li>
+                <li><a href="../gallery">Images</a></li>
+                <li><a href="../publication/">Publication</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Contact Us</h1>
+
+        <!-- LEFT SIDE: Info + Map -->
+        <div class="left-side">
+            <div class="info">
+                <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a
+                        href="mailto:info@yego.com">info@yego.com</a>
+                </p>
+                <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:+1234567890">+250 786 811 542</a></p>
+                <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Rwamagana Yego Center, Rwanda</p>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5097201209974!2d30.437776674967008!3d-1.9491998980331202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19db468120980311%3A0x9765be85eb1b98c6!2sRwamagana%20Yego%20Center!5e0!3m2!1sen!2srw!4v1756802667774!5m2!1sen!2srw"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: Form -->
+        <form>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-group">
+                <h3>Navigations</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-group">
+                <h3>Main links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Rwamagana</a></li>
+                        <li><a href="#">Min youth</a></li>
+                        <li><a href="#">Youth connect</a></li>
+                        <li><a href="#">RDB</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-group">
+                <h3>Programs</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Dance</a></li>
+                        <li><a href="#">Theater</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-group">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:sales@pisquare.rw">Yegocenter</a></p>
+                <p>Phone: <a href="tel:+250788888888">+250788 888 888</a></p>
+                <p>Address: Rwamagana, Rwanda</p>
+                <nav>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Yego Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+:root {
+  --blue: #00a1de;
+  --yellow: #fad201;
+  --green: #20603d;
+  --text-dark: #333;
+  --text-light: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: var(--text-dark);
+}
+
+.header {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  max-width: 600px;
+  color: #fff;
+  margin: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#about {
+  background: url('/images/maxresdefault.jpg') no-repeat center center/cover;
+  padding: 60px 20px;
+  color: white; /* Makes text readable on image */
+  position: relative;
+}
+
+/* Optional overlay for readability */
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: 1;
+}
+
+#about > * {
+  position: relative;
+  z-index: 2; /* keeps text above overlay */
+}
+
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: var(--blue);
+  margin-bottom: 15px;
+  font-size: 26px;
+  border-left: 6px solid var(--green);
+  padding-left: 10px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* Mission & Vision */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 28px;
+  color: var(--yellow);
+  margin-bottom: 12px;
+}
+
+/* Team */
+.team {
+  display: grid;
+  gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.member {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid var(--blue);
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+  color: var(--green);
+}
+
+.member p {
+  font-size: 14px;
+  color: var(--text-light);
+}

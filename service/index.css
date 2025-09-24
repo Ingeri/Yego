@@ -1,0 +1,84 @@
+:root {
+  --blue: #00a1de;
+  --yellow: #fad201;
+  --green: #20603d;
+  --text-dark: #333;
+  --text-light: #555;
+}
+
+@media (min-width: 769px) {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: var(--text-dark);
+}
+
+.header {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.services-grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  background: #f2fdf5;
+}
+
+.service i {
+  font-size: 40px;
+  color: var(--yellow);
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  color: var(--green);
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.service p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+}

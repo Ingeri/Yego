@@ -1,0 +1,174 @@
+:root {
+  --blue: #00a1de;
+  --yellow: #fad201;
+  --green: #20603d;
+  --text-dark: #333;
+  --text-light: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* LEFT SIDE: info + map */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info {
+  color: var(--text-light);
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 20px;
+  border-left: 5px solid var(--green);
+  background: #f2fdf5;
+  border-radius: 8px;
+}
+
+.info p {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info i {
+  color: var(--blue);
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
+.info a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info a:hover {
+  color: var(--yellow);
+}
+
+.map {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 200px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* RIGHT SIDE: form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 6px rgba(0, 161, 222, 0.4);
+  outline: none;
+}
+
+button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: var(--green);
+  transform: scale(1.05);
+}
+
+button:active {
+  background: var(--yellow);
+  color: var(--text-dark);
+  transform: scale(0.97);
+}
+
+/* Two-column layout on larger screens */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+
+  .map {
+    height: 300px;
+  }
+}

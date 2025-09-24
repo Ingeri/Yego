@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Grid with max 3 per row */
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  /* ensures image stays inside rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Full width responsive image */
+.program-icon img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* crops nicely */
+  display: block;
+}
+
+.program-title {
+  padding: 15px;
+}
+
+.program-title h3 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.program-title p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Social Media Links */
+.social-links-p {
+  margin: 15px 0;
+}
+
+.social-links-p a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: #666;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-links-p a:hover {
+  color: #0077b5;
+  /* hover blue */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .programs-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-list {
+    grid-template-columns: 1fr;
+  }
+}

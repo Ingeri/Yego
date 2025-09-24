@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwamaga | Yego Center</title>
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../images/logo.svg" alt="Yego Center Logo" style="width: 100px; height: auto;">
+            <h1><span>Rwamagana</span> <span>Yego Center</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About Us</a></li>
+                <li><a href="../service/">Services</a></li>
+                <li><a href="../programs/">Programs</a></li>
+                <li><a href="../gallery">Images</a></li>
+                <li><a href="../publication/">Publication</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  -->
+    <style>
+        .pub h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .pub ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .pub li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .pub li:hover {
+            transform: scale(1.02);
+        }
+
+        .pub a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .pub a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="pub">
+            <h1>📚 Publications</h1>
+            <ul id="publicationList"></ul>
+        </div>
+
+        <script>
+            // List of documents (you can add more)
+            const documents = [
+                { name: "ABANYESHURI_KUDODA", url: "../docs/ABANYESHURI_KUDODA.pdf" },
+                { name: "Yego center attendance", url: "../docs/rutayisire.pdf" },
+                { name: "People who accessed jobdesk", url: "../docs/Book3.pdf" }
+            ];
+
+            const list = document.getElementById('publicationList');
+
+            documents.forEach(doc => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = doc.url;
+                a.textContent = doc.name;
+                a.target = "_blank"; // open in new tab
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        </script>
+
+
+        <!--  -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-group">
+                    <h3>Navigations</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="/about/">About Us</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-group">
+                    <h3>Main links</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Rwamagana</a></li>
+                            <li><a href="#">Min youth</a></li>
+                            <li><a href="#">Youth connect</a></li>
+                            <li><a href="#">RDB</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-group">
+                    <h3>Programs</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Art</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Dance</a></li>
+                            <li><a href="#">Theater</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-group">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:sales@pisquare.rw">Yegocenter</a></p>
+                    <p>Phone: <a href="tel:+250788888888">+250788 888 888</a></p>
+                    <p>Address: Rwamagana, Rwanda</p>
+                    <nav>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Yego Center. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
